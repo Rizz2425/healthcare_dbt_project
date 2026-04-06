@@ -7,8 +7,7 @@ with cleaned_data as (
 select
     diagnosis_code,
     gender,
-    --count(patient_id) as total_patients,
-    count(distinct patient_id) as unique_patients,
+    count(patient_id) as total_patients,
     round(sum(billing_amount), 2) as total_revenue,
     round(avg(patient_age), 1) as avg_patient_age,
 
