@@ -1,5 +1,12 @@
 Welcome to your new dbt project!
 
+Project Title: Healthcare Analytics Pipeline
+
+Tech Stack: Snowflake, dbt-core, GitHub Actions.
+
+Key Features: Medallion Architecture, Data Quality Tests, Automated CI/CD.
+
+
 ### Using the starter project
 
 Try running the following commands:
