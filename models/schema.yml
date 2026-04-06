@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_healthcare_data
+    columns:
+      - name: patient_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_healthcare_cleaned
+    columns:
+      - name: gender
+        tests:
+          - accepted_values: # Yahan se 'name:' aur 'arguments:' wala list format hata diya
+              values: ['Male', 'Female', 'Other/Unknown', 'Unknown']
+      
+      - name: patient_age
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 120

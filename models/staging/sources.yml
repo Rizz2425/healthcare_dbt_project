@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: external_source
+    database: DBT_DB  
+    schema: DBT_SCH    
+    tables:
+      - name: raw_healthcare_data
